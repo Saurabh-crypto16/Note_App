@@ -359,7 +359,7 @@ public class CreateNoteActivity extends AppCompatActivity {
     private void showDeleteNoteDialog(){
         //Android AlertDialog can be used to display the dialog message with OK and Cancel buttons.
         //It can be used to interrupt and ask the user about his/her choice to continue or discontinue
-        if(dialogDeleteNote!=null){
+        if(dialogDeleteNote==null){
             AlertDialog.Builder builder=new AlertDialog.Builder(CreateNoteActivity.this);
             View view=LayoutInflater.from(this).inflate(
                     R.layout.layout_delete_note,
